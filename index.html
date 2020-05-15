@@ -32,13 +32,13 @@
 				<a class="nav-link" href="#about">about</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#skill">works</a>
+				<a class="nav-link" href="#skill">skill</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#portfolio">portfolio</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#contact">connect</a>
+				<a class="nav-link" href="#contact">contact</a>
 			</li>			
 		</ul>
 	</div>
@@ -48,7 +48,7 @@
 <!--- Image -->
 <div class="image">
 	<div class="image-inner">
-		<img src="img/background.webp">
+		<img src="img/top-picture.webp">
 		<div class="image-caption">
 			<h1 class="display-2">portfolio</h1>
 			<h3>job change activity</h3>
@@ -65,23 +65,23 @@
 		<h1 class="display-4">自己紹介</h1>
 	</div>
 	<div class="col-md-6 about-picture text-center">
-		<img src="img/background.png" class="rounded-circle">
+		<img src="img/top-picture.webp" class="rounded-circle">
 	</div>
 	<div class="col-md-6 about-text">
 	<ul>
 		<li>名前：Keigo Oba</li>
 		<li>出身：大阪府（現在も在住）</li>
 		<li>学歴：修成建設専門学校</li>
-		<li>活動：去年の８月からプログラミングに興味を持ち１月から本格的に勉強開始。３月にプログラミングスクールウェブカツを受講</li>
+		<li>活動：去年の８月からプログラミングに興味を持ち１月から本格的に勉強開始。2月にプログラミングスクールウェブカツを受講</li>
 		<li>その他：アルバイトで倉庫内検品作業・データ入力・飲食店調理補助をそれぞれ３ヶ月していたため、コツコツ作業は得意</li>
 	</ul>
 	</div>
 </div>
 </div>
-<hr class="my-4" id="skill">
-<!--- Three Column Section -->
-<div class="container-fluid padding">
-<div class="row text-center padding">
+
+<!--- skill -->
+<div class="container-fluid padding" id="skill">
+<div class="row text-center padding bg-light">
 	<div class="col-12">
 		<p class="subtitle">skill</p>
 		<h1 class="display-4">スキル</h1>
@@ -117,9 +117,40 @@
 		<p>gitを用いたチーム開発の擬似開発を一人で行なっています。gitの基本的な使い方はマスターしています。</p>
 	</div>
 </div>	
-<hr class="my-4">
 </div>
-
+<!-- portfolio -->
+<div class="container-fluid padding" id="portfolio">
+<div class="row text-center padding">
+<div class="col-12">
+	<p class="subtitle">portfolio</p>
+	<h1 class="display-4">ポートフォリオ</h1>
+</div>
+<div id="slides" class="carousel slide text-center" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+	</ul>	
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<a href="https://yourself12.herokuapp.com"><img src="img/background.png"></a>
+			<p>PHP jqueryを用いた求人サービス</p>
+		</div>
+		<div class="carousel-item">
+			<a href=""><img src="img/background2.png"></a>
+			<p>html css bootstrapを用いたLP制作</p>
+		</div>
+		<div class="carousel-item">
+			<a href="https://appach443.herokuapp.com"><img src="img/ba
+			ckground3.png"></a>
+			<p>　　html cssを用いたLP制作</p>
+		</div>
+	</div>
+</div>
+<div class="col-12">
+	<a href="https://github.com/keigooba/production.git"><button type="button" class="btn btn-primary btn-lg">その他制作物</button></a>
+</div>
+</div>
 <!--- Two Column Section -->
 <div class="container-fluid padding">
 <div class="row padding">
@@ -137,13 +168,6 @@
 </div>
 
 <hr class="my-4">
-<!--- Fixed background -->
-<figure>
-	<div class="fixed-wrap">
-		<div id="fixed">
-		</div>
-	</div>
-</figure>
 
 <!--- Emoji Section -->
 <button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
@@ -288,9 +312,7 @@
 
 
 
-
-<!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
+<div id="slides" class="carousel slide text-center" data-ride="carousel">
 	<ul class="carousel-indicators">
 		<li data-target="#slides" data-slide-to="0" class="active"></li>
 		<li data-target="#slides" data-slide-to="1"></li>

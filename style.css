@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+/* html */
 html,body{
   height:100%;
   width:100%;
   font-family: 'Poppins',sans-serif;
   color: #222;
 }
+/* Navigation */
 .navbar{
   padding: .8rem;
   background-color:#00aced;
@@ -17,6 +19,7 @@ html,body{
   font-size: 1.1em !important;
   text-transform: capitalize;
 }
+/* image */
 .image {
   width: 100%;
   height:100%;
@@ -52,6 +55,7 @@ html,body{
 .btn-works {
   margin-top: 1.5rem;
 }
+/* about */
 #about {
   width: 75%;
   margin: 0 auto;
@@ -62,6 +66,7 @@ html,body{
 }
 .display-4 {
   font-weight:bold;
+  margin-bottom: 2rem;
 }
 .subtitle {
   color: #fd7e00;
@@ -78,6 +83,7 @@ html,body{
 .about-text ul li {
   margin: .8rem;
 }
+/* skill */
 .padding {
   padding-bottom: 2rem;
 }
@@ -103,6 +109,32 @@ html,body{
  .fa-js , .fa-php , .fa-git {
   font-size: 4em;
   margin: 1rem;
+}
+/* carousel */
+.carousel-item {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  background-color:darkblue;
+}
+.carousel-item a {
+  display:block;
+}
+.carousel-inner img{
+  width:100%;
+  height:100%;
+  opacity:0.7;
+}
+.carousel-inner img:hover{
+  opacity: 0.2;
+}
+.carousel-inner p {
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25%;
+  font-size: 1.5rem;
+  color: white;
 }
 .fun {
   width: 100%;
@@ -180,6 +212,10 @@ hr.light-100 {
   font-size: 95%;
   padding: 8px 14px;
 }
+.carousel-inner p {
+  left: 15%;
+  font-size: 1rem;
+}
 .social a {
   font-size: 2.5em;
   padding: 1.2rem;
@@ -198,6 +234,13 @@ hr.light-100 {
 .image-caption .btn {
   font-size: 90%;
   padding: 4px 8px;
+}
+.carousel-indicators {
+  display: none;
+}
+.carousel-inner p {
+  left: 13%;
+  font-size: .8rem;
 }
 #about {
   width: 100%;

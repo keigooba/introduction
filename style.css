@@ -77,9 +77,6 @@ html,body{
   width: 70%;
   height: 100%;
 }
-.about-text {
-  padding-left: 5rem !important;
-}
 .about-text ul li {
   margin: .8rem;
 }
@@ -197,7 +194,7 @@ footer {
 }
 @media (max-width: 576px) {
 .image-caption {
-  left:20%;
+  left:13%;
 }
 .image-caption h1{
   font-size: 350%;

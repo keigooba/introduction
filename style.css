@@ -149,7 +149,11 @@ html,body{
 .fa-twitter{
   color: #00aced;
 }
-.fa-twitter:hover{
+.fa-github {
+  color: #24292e;
+}
+.fa-twitter:hover,
+.fa-github:hover{
   color: #d5d5d5;
 }
 footer {
@@ -213,6 +217,9 @@ footer {
 .carousel-inner p {
   left: 17%;
   font-size: .8rem;
+}
+.social .lead {
+  font-size: .9rem;
 }
 .social a {
   font-size: 3em;

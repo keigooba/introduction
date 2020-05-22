@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="first">
+    <p>↓スクロールしてください↓</p>
+  </div>
+  <div id="second">
+    <img src="img/top-picture.jpg" class="fadein">
+  </div>
+<script>
+$(function(){
+  $(window).scroll(function(){
+    $('.fadein').each(function(){
+      var position = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > position - windowHeight + 200){
+        $(this).addClass('active');
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>

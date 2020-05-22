@@ -78,6 +78,9 @@ html,body{
   width: 70%;
   height: 100%;
 }
+.about-text {
+  text-align: left;
+}
 .about-text ul li {
   margin: .8rem;
 }
@@ -240,27 +243,32 @@ footer {
     padding: 1rem;
 }
 
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
-
-
-
+#page_top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 30px;
+}
+#page_top a {
+  background-color: rgba(73,173,238,1.0);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+#page_top a:hover {
+  background-color: rgba(73,173,238,0.5);
+  text-decoration: none;
+}
+.fadein {
+  opacity: 0;
+  transform : translate(0, 100px);
+  transition: all 1s;
+}
+.fadein.active {
+  opacity: 1;
+  transform: translate(0,0);
+}
 
 
 

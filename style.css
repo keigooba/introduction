@@ -155,8 +155,12 @@ html,body{
 .fa-github {
   color: #24292e;
 }
+.fa-quora{
+  color: #5FC52E;
+}
 .fa-twitter:hover,
-.fa-github:hover{
+.fa-github:hover,
+.fa-quora:hover{
   color: #d5d5d5;
 }
 footer {

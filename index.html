@@ -2,7 +2,6 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>大庭慶吾のポートフォリオ</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -46,8 +45,8 @@
 </nav>
 
 <!--- Image -->
-<div class="image fadein" id="top">
-	<div class="image-inner">
+<div class="image" id="top">
+	<div class="image-inner fade-element-up js-fade-trigger">
 		<img src="img/top-picture.jpg">
 		<div class="image-caption">
 			<h1 class="display-2">portfolio</h1>
@@ -60,72 +59,72 @@
 <!--- About -->
 <div class="container-fluid padding">
 <div class="row text-center padding" id="about">
-	<div class="col-12 fadein">
+	<div class="col-12 fade-element-left js-fade-trigger">
 		<p class="subtitle">about</p>
 		<h1 class="display-4">自己紹介</h1>
 	</div>
-	<div class="col-md-6 about-picture fadein">
+	<div class="col-md-6 about-picture fade-element-left js-fade-trigger">
 		<img src="img/mypicture.jpg" class="rounded-circle">
 	</div>
-	<div class="col-md-6 about-text fadein">
+	<div class="col-md-6 about-text fade-element-right js-fade-trigger">
 	<ul>
 		<li>名前：Keigo Oba</li>
 		<li>出身：大阪府（現在も在住）</li>
 		<li>学歴：修成建設専門学校</li>
 		<li>活動：去年の８月からプログラミングに興味を持ち１月から本格的に勉強開始。2月にオンラインプログラミングスクールを受講</li>
-		<li>その他：アルバイトで倉庫内検品作業・データ入力・飲食店調理補助をそれぞれ３ヶ月していたため、コツコツ作業は得意</li>
+		<li>職歴：建築会社の工務店で2年程働いた経験があります</li>
 	</ul>
 	</div>
 </div>
 </div>
-
 <!--- skill -->
-<div class="container-fluid padding bg-light" id="skill">
-<div class="row text-center padding">
-	<div class="col-12 fadein">
-		<p class="subtitle">skill</p>
-		<h1 class="display-4">スキル</h1>
-	</div>
-	<div class="col-sm-6 col-md-4 fadein">
+<div class="container-fluid text-center padding bg-light" id="skill">
+<div class="fade-element-left js-fade-trigger">
+	<p class="subtitle">skill</p>
+	<h1 class="display-4">スキル</h1>
+</div>
+<section class="row skill-container js-fade-trigger fade-elem">
+	<div class="col-sm-6 col-md-4 fade-element-rotate">
 		<i class="fas fa-code"></i>
 		<h3>HTML5</h3>
 		<p>div,table,form等基本的なタグでコーディングすることができます。基本的なタグは網羅しています。</p>
 	</div>
-	<div class="col-sm-6 col-md-4 fadein">
+	<div class="col-sm-6 col-md-4 fade-element-rotate">
 		<i class="fab fa-css3"></i>
 		<h3>CSS3</h3>
 		<p>float,positionを使え、思った通りの画面表示を作ることができます。オリジナルのLP制作も可能です。</p>
 	</div>
-	<div class="col-sm-6 col-md-4 fadein">
+	<div class="col-sm-6 col-md-4 fade-element-rotate">
 		<i class="fas fa-bold"></i>
 		<h3>BOOTSTRAP</h3>
 		<p>グリットシステムを使ったレスポンシブ対応。その他追加機能を扱い、コーディングの時間を短縮できます。</p>
 	</div>
-	<div class="col-sm-6 col-md-4 fadein">
+	<div class="col-sm-6 col-md-4 fade-element-rotate">
 		<i class="fab fa-js"></i>
 		<h3>Javascript</h3>
 		<p>slidedown,show等を用いたリッチなコーポレートサイトの作成が可能です。jqueryも扱えます。</p>
 	</div>
-	<div class="col-sm-6 col-md-4 fadein">
+	<div class="col-sm-6 col-md-4 fade-element-rotate">
 		<i class="fab fa-php"></i>
 		<h3>PHP</h3>
 		<p>MYSQLを用いた開発が可能です。CRUDシステムを持ったシステムをフルスクラッチで作成出来ます。</p>
 	</div>
-	<div class="col-sm-6 col-md-4 fadein">
+	<div class="col-sm-6 col-md-4 fade-element-rotate">
 		<i class="fab fa-git"></i>
 		<h3>git</h3>
 		<p>gitを用いたチーム開発の擬似開発を一人で行なっています。gitの基本的な使い方はマスターしています。</p>
 	</div>
-</div>	
+</section>
+<!-- </div>	 -->
 </div>
 <!-- portfolio -->
 <div class="container-fluid padding" id="portfolio">
-<div class="row text-center padding">
-<div class="col-12 fadein">
+<div class="row text-center">
+<div class="col-12 fade-element-left js-fade-trigger">
 	<p class="subtitle">portfolio</p>
 	<h1 class="display-4">ポートフォリオ</h1>
 </div>
-<div id="slides" class="carousel slide text-center fadein" data-ride="carousel">
+<div id="slides" class="carousel slide text-center fade-element-up js-fade-trigger" data-ride="carousel">
 	<ul class="carousel-indicators">
 		<li data-target="#slides" data-slide-to="0" class="active"></li>
 		<li data-target="#slides" data-slide-to="1"></li>
@@ -148,37 +147,39 @@
 		</div>
 	</div>
 </div>
-<div class="col-12 git fadein">
-	<h3>githubリポジトリ</h3>
 </div>
-<div class="col-sm-6 col-md-3 fadein">
-	<a href="https://github.com/keigooba/ori.git"><button type="button" class="btn btn-dark btn-lg">PHP制作</button></a>
+<div class="row js-fade-trigger fade-elem text-center">
+	<div class="col-12 git fade-element-left js-fade-trigger">
+		<h3>githubリポジトリ</h3>
+	</div>
+	<div class="col-sm-6 col-md-3 fade-element-rotate">
+		<a href="https://github.com/keigooba/ori.git"><button type="button" class="btn btn-dark btn-lg">PHP制作</button></a>
+	</div>
+	<div class="col-sm-6 col-md-3 fade-element-rotate">
+		<a href="https://github.com/keigooba/introduction.git"><button type="button" class="btn btn-dark btn-lg">自己紹介</button></a>
+	</div>
+	<div class="col-sm-6 col-md-3 fade-element-rotate">
+		<a href="https://github.com/keigooba/LP.git"><button type="button" class="btn btn-dark btn-lg">LP制作</button></a>
+	</div>
+	<div class="col-sm-6 col-md-3 fade-element-rotate">
+		<a href="https://github.com/keigooba/production.git"><button type="button" class="btn btn-dark btn-lg">その他制作物</button></a>
+	</div>
 </div>
-<div class="col-sm-6 col-md-3 fadein">
-	<a href="https://github.com/keigooba/introduction.git"><button type="button" class="btn btn-dark btn-lg">自己紹介</button></a>
 </div>
-<div class="col-sm-6 col-md-3 fadein">
-	<a href="https://github.com/keigooba/LP.git"><button type="button" class="btn btn-dark btn-lg">LP制作</button></a>
-</div>
-<div class="col-sm-6 col-md-3 fadein">
-	<a href="https://github.com/keigooba/production.git"><button type="button" class="btn btn-dark btn-lg">その他制作物</button></a>
-</div>
-</div>
-</div>
-
-
 <!--- Contact -->
 <div class="container-fluid padding bg-light" id="contact">
-<div class="row text-center padding">
-	<div class="col-12 fadein">
+<div class="row text-center">
+	<div class="col-12 fade-element-left js-fade-trigger">
 		<p class="subtitle">contact</p>
 		<h1 class="display-4">お問い合わせ</h1>
 	</div>
 	<div class="col-12 social padding">
-		<p class="lead fadein">ご意見・ご質問等あればお気軽にご連絡下さい。</p>
-		<a href="https://twitter.com/hx_kei" class="fadein"><i class="fab fa-twitter"></i></a>
-		<a href="https://github.com/keigooba" class="fadein"><i class="fab fa-github"></i></a>
-		<a href="https://qiita.com/hx_kei" class="fadein"><i class="fab fa-quora"></i></a>
+		<p class="lead fade-element-up js-fade-trigger">ご意見・ご質問等あればお気軽にご連絡下さい。</p>
+		<div class="js-fade-trigger fade-element-up">
+			<a href="https://twitter.com/hx_kei"><i class="fab fa-twitter"></i></a>
+			<a href="https://github.com/keigooba"><i class="fab fa-github"></i></a>
+			<a href="https://qiita.com/hx_kei"><i class="fab fa-quora"></i></a>
+		</div>
 	</div>
 </div>
 </div>
@@ -187,35 +188,70 @@
 	<p style="margin: 0">Copyright KEIGO portfolio 2020</p>
 </footer>
 <div id="page_top"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+<div class="message-toggle" id="js-message-1">サッカーが好きです。</div>
+<div class="message-toggle" id="js-message-2">カレーが好きです。</div>
+<div class="message-toggle" id="js-message-3">漫画が好きです。</div>
 </body>
 <script>
-$(function(){
-	$(window).scroll(function(){
-		$('.fadein').each(function(){
-			var position = $(this).offset().top;
-			var scroll = $(window).scrollTop();
-			var windowHeight = $(window).scrollTop();
-			if(scroll > position - windowHeight + 200){
-				$(this).addClass('active');
+// 要素のフェードインアニメーション
+$(window).scroll(function(){
+	$('.js-fade-trigger').each(function(){
+		var position = $(this).offset().top;
+		var scroll = $(window).scrollTop();
+		var windowHeight = $(window).scrollTop();
+
+		if(scroll > position - windowHeight + 200){
+			if($(this).hasClass('fade-element-left')) {
+				$(this).addClass('fade-common');
+			} else if($(this).hasClass('fade-element-up')){
+				$(this).addClass('fade-common');
+			} else if($(this).hasClass('fade-element-right')) {
+				$(this).addClass('fade-common');
+			} else if($(this).hasClass('fade-elem')) {
+				$(this).find('.fade-element-rotate').addClass('fade-common');
+				$(this).find('.fade-element-up').addClass('fade-common');
 			}
-		});
-	});
-	var pagetop = $('#page_top');
-	// ボタン非表示
-	pagetop.hide();
-	// 100px スクロールしたらボタン表示
-	$(window).scroll(function(){
-		if($(this).scrollTop() > 100){
-			pagetop.fadeIn();			
-		} else {
-			pagetop. fadeOut();
 		}
 	});
-	pagetop.click(function() {
-		$('body,html').animate({scrollTop: 0 }, 500);
-		return false;
-	});
 });
+
+var pagetop = $('#page_top');
+// ボタン非表示
+pagetop.hide();
+// 100px スクロールしたらボタン表示
+$(window).scroll(function(){
+	if($(this).scrollTop() > 100){
+		pagetop.fadeIn();			
+	} else {
+		pagetop. fadeOut();
+	}
+});
+pagetop.click(function() {
+	$('body,html').animate({scrollTop: 0 }, 500);
+	return false;
+});
+//一言自己紹介コメント
+$(window).scroll(function(){
+
+	if($(this).scrollTop() > 500 && $(this).scrollTop() < 650) {
+		$("#js-message-1").fadeIn();
+	} else {
+		$("#js-message-1").fadeOut();
+	}
+
+	if($(this).scrollTop() > 1100 && $(this).scrollTop() < 1250) {
+		$("#js-message-2").fadeIn();
+	} else {
+		$("#js-message-2").fadeOut();
+	}
+
+	if($(this).scrollTop() > 1800 && $(this).scrollTop() < 1950) {
+		$("#js-message-3").fadeIn();
+	} else {
+		$("#js-message-3").fadeOut();
+	}	
+});
+
 </script>
 </html>
 

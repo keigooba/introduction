@@ -86,7 +86,11 @@ html,body{
 }
 /* skill */
 .padding {
-  padding-bottom: 2rem;
+  padding: 2rem;
+}
+.skill-container {
+  width: 90%;
+  margin: 0 auto;
 }
 .fa-code {
   color: #e54d26;
@@ -233,20 +237,11 @@ footer {
   padding: .7rem;
 }
 }
-/*---Firefox Bug Fix --*/
-.image-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
+/* --- Bootstrap Padding Fix -- */
+  [class*="col-"] {
     padding: 1rem;
-}
-
+} 
+/* トップページに戻るボタン */
 #page_top {
   position: fixed;
   bottom: 50px;
@@ -264,14 +259,55 @@ footer {
   background-color: rgba(73,173,238,0.5);
   text-decoration: none;
 }
-.fadein {
+/* フェードインアウト */
+.fade-element-up {
   opacity: 0;
-  transform : translate(0, 100px);
+  transform: translateY(300px);
+  transition: all 2s;
+
+}
+.fade-element-left {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 2s;
+
+}
+.fade-element-right {
+  opacity: 0;
+  transform: translateX(300px);
+  transition: all 2s;
+
+}
+.fade-element-rotate {
+  opacity: 0;
+  transform:rotate(180deg);
   transition: all 2s;
 }
-.fadein.active {
+.fade-common {
   opacity: 1;
-  transform: translate(0,0);
+  transform: none;
+}
+/* 吹き出し */
+.message-toggle {
+  width: 200px;
+  height: 50px;
+  background: rgba(116,120,172,0.5);
+  position: fixed;
+  top: 120px;
+  right:40px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  display: none;
+}
+.message-toggle:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-left: 10px solid rgba(116,120,172,0.5); 
 }
 
 

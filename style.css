@@ -118,6 +118,7 @@ html,body{
 /* carousel */
 #portfolio {
   width: 75%;
+  margin-bottom: 80px;
 }
 .carousel-item {
   width: 75%;
@@ -240,7 +241,7 @@ footer {
 /* --- Bootstrap Padding Fix -- */
   [class*="col-"] {
     padding: 1rem;
-} 
+}
 /* トップページに戻るボタン */
 #page_top {
   position: fixed;
@@ -307,9 +308,5 @@ footer {
   left: 100%;
   margin-top: -10px;
   border: 10px solid transparent;
-  border-left: 10px solid rgba(116,120,172,0.5); 
+  border-left: 10px solid rgba(116,120,172,0.5);
 }
-
-
-
-

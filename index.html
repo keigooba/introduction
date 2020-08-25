@@ -1,238 +1,605 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-	<meta charset="utf-8">
-	<title>大庭慶吾のポートフォリオ</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>大庭慶吾 ポートフォリオサイト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- フォントアイコン -->
+  <script src="https://kit.fontawesome.com/c4d6181f75.js" crossorigin="anonymous"></script>
+  <!-- <link href="style.css" rel="stylesheet"> -->
 </head>
+
 <body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <div class="container-fluid">
+      Keigo Oba's Portfolio
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#top">top</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light fixed-top">
-<div class="container-fluid">
-	Keigo Oba's Portfolio
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<div class="collapse navbar-collapse" id="navbarResponsive">
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">portfolio</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#top">top</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#about">about</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#skill">skill</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#portfolio">portfolio</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#contact">contact</a>
-			</li>
-		</ul>
-	</div>
-</div>
-</nav>
+  <!--- Image -->
+  <div class="image" id="top">
+    <div class="image-inner">
+      <img src="img/top-picture.jpg">
+      <div class="image-caption">
+        <h2 class="text-danger">ただ今、転職活動中！</h2>
+        <p class="text-secondary">希望職種：バックエンドエンジニア</p>
+        <p class="text-secondary">学習中言語：PHP,Laravel</p>
+        <p class="text-secondary">希望勤務地：大阪、東京</p>
+        <p class="text-secondary">希望年収：250万円/年 以上</p>
+        <h2 class="text-secondary">興味持って頂きましたらご連絡ください！</h2>
+      </div>
+    </div>
+  </div>
 
-<!--- Image -->
-<div class="image" id="top">
-	<div class="image-inner fade-element-up js-fade-trigger">
-		<img src="img/top-picture.jpg">
-		<div class="image-caption">
-			<h1 class="display-2">portfolio</h1>
-			<h3>job change activity</h3>
-			<a href="#portfolio"><button type="button" class="btn btn-light btn-lg btn-works">PORTFOLIO</button></a>
-		</div>
-	</div>
-</div>
+  <!--- About -->
+  <div class="container-fluid">
+    <div class="row text-center" id="about">
+      <div class="col-12 fade-element-left js-fade-trigger">
+        <p class="subtitle">about</p>
+        <h1>自己紹介</h1>
+      </div>
+      <div class="col-md-6 about-picture fade-element-left js-fade-trigger font-medium">
+        <img src="img/mypicture.jpg" class="rounded-circle mb-2">
+        <label style="display:block"><a href="https://twitter.com/hx_kei"><i
+              class="fab fa-twitter"></i>Twitter</a></label>
+        <label style="display:block"><a href="https://github.com/keigooba"><i
+              class="fab fa-github"></i>GitHub</a></label>
+        <label style="display:block"><a href="https://qiita.com/hx_kei"><i class="fab fa-quora"></i>Qiita</a></label>
+      </div>
+      <div class="col-md-6 about-text fade-element-right js-fade-trigger">
+        <h2><i class="fas fa-user mr-4"></i>パーソナル情報</h2>
+        <div class="m-2">
+          <p>大庭 慶吾（おおば けいご）</p>
+          <p>1995年08月10日生まれ/25歳</p>
+        </div>
+        <h2><i class="fas fa-walking mr-4"></i>経歴</h2>
+        <div class="m-2">
+          <ul class="m-2">
+            <li>2016年8月：龍谷大学 環境ソリューション工学科 中退</li>
+            <li>2016年9月：大庭工務店 入社（アルバイト）</li>
+            <li>2017年3月：修成建設専門学校 建築学科(夜間） 入学</li>
+          </ul>
+          <div class="m-2">
+            <p>
+              「モノづくり」ができる建築に興味を持ち、大学を中退して父が経営する会社に入社しました。<br>入社２年目に現場監督として、１年で4件の新築現場を担当し、責任を持って業務に取り組んできました。<br>当時の現場の課題は納期を守れない事。<br>それに対して毎日のスケジュール確認・現場に入る職人への4、5日前の事前確認連絡・雨天中止や大工工事延長の予備日の設定など。<br>これらを徹底することで検査確認もスムーズに行え、全ての現場で納期を守り、<span
+                class="text-danger font-weight-bold">誰よりも余裕を持って完工することができました。</span><br>毎日円滑に進めるための方法を考え、自然にその行動を取るようになりました。<br><span
+                class="text-danger font-weight-bold">常に頭を使い改善案を考える癖</span>がこの時身につきました。</p>
+          </div>
+          <ul class="m-2">
+            <li>2019年1月：大庭工務店 退職</li>
+            <li>2019年3月：修成建設専門学校 建築学科(夜間）卒業・菱和建設(株) 就職</li>
+            <li>2019年6月：菱和建設(株）退職</li>
+          </ul>
+          <div class="m-2">
+            <p>仕事しながら夜間で通った専門学校を卒業後、総合建設会社に就職。<br>そこで改めて現場監督の将来性に不安を感じ、真剣に考え、退職を決意しました。<br>当時は未熟だったと反省しています。</p>
+          </div>
+          <ul class="m-2">
+            <li>2019年7月：大庭工務店 退職</li>
+            <li>2019年3月：修成建設専門学校 建築学科(夜間）卒業・菱和建設(株) 就職</li>
+            <li>2019年6月：菱和建設(株）退職</li>
+          </ul>
+          <div class="m-2">
+            <p>夜間で通った専門学校を卒業後、総合建設会社に就職。<br>そこで改めて現場監督の将来性に不安を感じ、真剣に考え、退職を決意しました。<br><span
+                class="text-danger font-weight-bold">当時は未熟だったと反省しています。</span></p>
+          </div>
+          <ul class="m-2">
+            <li>2019年7月：株式会社ウィルエージェンシー 派遣 短期</li>
+            <li>2019年9月：株式会社ヒガシ21 倉庫内作業 派遣 短期（掛け持ち)</li>
+            <li>2019年10月：うおまん中之島店 アルバイト(掛け持ち)</li>
+            <li>2019年11月：阪急トラベルサポート（株） 派遣 短期(掛け持ち)</li>
+          </ul>
+          <div class="m-2">
+            <p>
+              11月~12月にプログラミングスクールに通う資金のために、掛け持ちで週7・9~22時で働きました。業務は倉庫内作業・データ入力・調理補助です。<br>基本的にはどれも単純作業で体力的に辛い時もありましたが、無事目標金額を達成できました。<br><span
+                class="text-danger font-weight-bold">目標定められた時、その仕事へのやりがいや楽しさを見出すことができます。</span></p>
+          </div>
+          <ul class="m-2">
+            <li>2020年4月：株式会社SHIROLOG アルバイト 短期</li>
+            <li>2020年6月：阪急トラベルサポート(株） 派遣 短期 7月退職</li>
+          </ul>
+          <div class="m-2">
+            <p>
+              11月~12月にプログラミングスクールに通う資金のために、掛け持ちで週7・9~22時で働きました。業務は倉庫内作業・データ入力・調理補助です。<br>基本的にはどれも単純作業で体力的に辛い時もありましたが、無事目標金額を達成できました。<br><span
+                class="text-danger font-weight-bold">目標定められた時、その仕事へのやりがいや楽しさを見出すことができます。</span></p>
+          </div>
+          <ul class="m-2">
+            <li>2020年4月：株式会社SHIROLOG アルバイト 短期</li>
+            <li>2020年6月：阪急トラベルサポート(株） 派遣 短期 7月退職</li>
+            <li>現在転職活動中</li>
+          </ul>
+        </div>
+        <h2><i class="far fa-hand-point-up"></i>2019年に学習したプログラミングスキル</h2>
+        <p class="text-danger">12月30日から現在まで継続的に学習を続けています</p>
+        <p>12月30日~1月16日(17日)：Ruby,Ruby on Rails</p>
+        <p>1月17日~2月21日(35日)：html,css,bootstrap,git</p>
+        <p>2月22日~3月22日(30日)：html,css,javascript</p>
+        <p>3月23日~5月7日(45日)：PHP,SQL</p>
+        <p>5月8日~6月18日(40日)：成果物アウトプット</p>
+        <p>6月19日~現在(66日)：Docker,aws,circleci,laravel</p>
+        <p>成果物については下記参照ください</p>
+      </div>
+      <h2><i class="fas fa-pen-nib"></i>どのような業務をしたいか</h2>
+      <div class="m-2">
+        <p><span
+            class="text-danger font-weight-bold">より多くの人に使ってもらえる面白いアプリ開発</span>に携わりたいです。<br>その為に必要な言語やスキルを常に取り入れていける環境で働きたいです。
+        </p>
+      </div>
+      <h2><i class=""></i>どの様なエンジニアになりたいか</h2>
+      <div class="m-2">
+        <p>建築専門学校を卒業していてもIT業界を志した理由は、<span
+            class="text-danger font-weight-bold">「簡略化による価値を生み出し、より多くの人に喜んで貰いたい」</span>と感じたからです。</p>
+      </div>
+      <section>
+        <h4>1.物事の簡略化</h4>
+        <p>便利なシステムは世の中に多くあるのですが、複雑化して一般ユーザーでは使いづらいシステムがあると考えています。<br>老若男女誰にでも扱えるよう常に改善策を考え、ユーザーに寄り添った提案・実装をしていきたいです。
+        </p>
+      </section>
+      <section>
+        <h4>2.価値提供</h4>
+        <p>
+          価値とは人に喜んで貰って、はじめて意味を持つものだと考えています。<br>
+          サービス開発時には、常に人に使って貰い、多くの人に便利だと喜んで貰う事を意識して作成しており、適宜改善・修正を行っています。<br>
+          また、ITにはそれが実現可能だと思い、ITへの道を志しました。
+        </p>
+      </section>
+      <section>
+        <h4>3.影響力を持つ</h4>
+        <p>
+          私が得た情報やスキルは、どんどん他者へ提供していこうと考えております。<br>
+          SNSを使って情報発信したり、技術記事を発信したりと、積極的に実行していきます。それにより1人でも多くの人に影響を与え、私の志す「より多くの人に喜んで貰うこと」に必要な条件だと考えています。
+        </p>
+      </section>
+    </div>
 
-<!--- About -->
-<div class="container-fluid padding">
-<div class="row text-center padding" id="about">
-	<div class="col-12 fade-element-left js-fade-trigger">
-		<p class="subtitle">about</p>
-		<h1 class="display-4">自己紹介</h1>
-	</div>
-	<div class="col-md-6 about-picture fade-element-left js-fade-trigger">
-		<img src="img/mypicture.jpg" class="rounded-circle">
-	</div>
-	<div class="col-md-6 about-text fade-element-right js-fade-trigger">
-	<ul>
-		<li>名前：Keigo Oba</li>
-		<li>出身：大阪府（現在も在住）</li>
-		<li>学歴：修成建設専門学校</li>
-		<li>活動：去年の８月からプログラミングに興味を持ち１月から本格的に勉強開始。2月にオンラインプログラミングスクールを受講</li>
-		<li>職歴：建築会社の工務店で2年程働いた経験があります</li>
-	</ul>
-	</div>
-</div>
-</div>
-<!--- skill -->
-<div class="container-fluid text-center padding bg-light" id="skill">
-<div class="fade-element-left js-fade-trigger">
-	<p class="subtitle">skill</p>
-	<h1 class="display-4">スキル</h1>
-</div>
-<section class="row skill-container js-fade-trigger fade-elem">
-	<div class="col-sm-6 col-md-4 fade-element-rotate">
-		<i class="fas fa-code"></i>
-		<h3>HTML5</h3>
-		<p>div,table,form等基本的なタグでコーディングすることができます。基本的なタグは網羅しています。</p>
-	</div>
-	<div class="col-sm-6 col-md-4 fade-element-rotate">
-		<i class="fab fa-css3"></i>
-		<h3>CSS3</h3>
-		<p>float,positionを使え、思った通りの画面表示を作ることができます。オリジナルのLP制作も可能です。</p>
-	</div>
-	<div class="col-sm-6 col-md-4 fade-element-rotate">
-		<i class="fas fa-bold"></i>
-		<h3>BOOTSTRAP</h3>
-		<p>グリットシステムを使ったレスポンシブ対応。その他追加機能を扱い、コーディングの時間を短縮できます。</p>
-	</div>
-	<div class="col-sm-6 col-md-4 fade-element-rotate">
-		<i class="fab fa-js"></i>
-		<h3>Javascript</h3>
-		<p>slidedown,show等を用いたリッチなコーポレートサイトの作成が可能です。jqueryも扱えます。</p>
-	</div>
-	<div class="col-sm-6 col-md-4 fade-element-rotate">
-		<i class="fab fa-php"></i>
-		<h3>PHP</h3>
-		<p>MYSQLを用いた開発が可能です。CRUDシステムを持ったシステムをフルスクラッチで作成出来ます。</p>
-	</div>
-	<div class="col-sm-6 col-md-4 fade-element-rotate">
-		<i class="fab fa-git"></i>
-		<h3>git</h3>
-		<p>gitを用いたチーム開発の擬似開発を一人で行なっています。gitの基本的な使い方はマスターしています。</p>
-	</div>
-</section>
-<!-- </div>	 -->
-</div>
-<!-- portfolio -->
-<div class="container-fluid padding" id="portfolio">
-<div class="row text-center">
-<div class="col-12 fade-element-left js-fade-trigger">
-	<p class="subtitle">portfolio</p>
-	<h1 style="font-weight:bold;">ポートフォリオ</h1>
-</div>
-<div id="slides" class="carousel slide text-center fade-element-up js-fade-trigger" data-ride="carousel">
-	<ul class="carousel-indicators">
-		<li data-target="#slides" data-slide-to="0" class="active"></li>
-		<li data-target="#slides" data-slide-to="1"></li>
-		<li data-target="#slides" data-slide-to="2"></li>
-	</ul>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<a href="https://yourself8989.herokuapp.com"><img src="img/background.png"></a>
-			<p>PHP jqueryを用いた求人サービス</p>
-		</div>
-		<div class="carousel-item">
-			<a href="https://korona8888.herokuapp.com"><img src="img/background4.png"></a>
-			<p>コロナについてまとめたHP制作</p>
-		</div>
-		<div class="carousel-item">
-			<a href="https://opanda.herokuapp.com"><img src="img/background5.png"></a>
-			<p>　　PHPのみの４択クイズ</p>
-		</div>
-	</div>
-</div>
-</div>
-</div>
-<!--- Contact -->
-<div class="container-fluid padding bg-light" id="contact">
-<div class="row text-center">
-	<div class="col-12 fade-element-left js-fade-trigger">
-		<p class="subtitle">contact</p>
-		<h1 class="display-4">お問い合わせ</h1>
-	</div>
-	<div class="col-12 social padding">
-		<p class="lead fade-element-up js-fade-trigger">ご意見・ご質問等あればお気軽にご連絡下さい。</p>
-		<div class="js-fade-trigger fade-element-up">
-			<a href="https://twitter.com/hx_kei"><i class="fab fa-twitter"></i></a>
-			<a href="https://github.com/keigooba"><i class="fab fa-github"></i></a>
-			<a href="https://qiita.com/hx_kei"><i class="fab fa-quora"></i></a>
-		</div>
-	</div>
-</div>
-</div>
-<!--- Footer -->
-<footer>
-	<p style="margin: 0">Copyright KEIGO portfolio 2020</p>
-</footer>
-<div id="page_top"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
-<div class="message-toggle" id="js-message-1">サッカーが好きです。</div>
-<div class="message-toggle" id="js-message-2">カレーが好きです。</div>
-<div class="message-toggle" id="js-message-3">漫画が好きです。</div>
+    <section class="text-center back_dark padding_top" id="section2">
+      <div class="front_text">PHP<h2 class="back_text">PHP</h2>
+      </div>
+      <h3 class="content_title">yourself</h3>
+      <div class="container">
+        <div class="left_space">
+          <p>制作したアプリへのリンク</p>
+          <a href="https://yourself8989.herokuapp.com/" target="_blank"><img src="img/yourself.png" alt="yourself"></a>
+          <p>制作したアプリの実行画面動画</p>
+          <video autoplay muted playsinline controls src="img/yourself.mov" class="capture_video"></video>
+        </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-chalkboard"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">アプリの概要</h4>
+              <ul>
+                <li>・様々な求職者と連絡を取れる連絡掲示板アプリ</li>
+                <li>・前職、年代別、年代表示順を指定してユーザー検索が可能</li>
+                <li>・ユーザー詳細ページで詳細情報を知ることが可能</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">ソースコード</h4>
+              <a href="https://github.com/keigooba/yourself.git" class="github blue-link"
+                target="_blank">GitHub(yourself)</a>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・初めてPHPのみでCRUD処理を実装して制作したアプリ</li>
+                <li>・HEROKUにアプリをデプロイしています。HEROKUへのデプロイ方法（LPのみ）をQiitaへ投稿</li>
+                <li> →Qiita<a href="https://qiita.com/hx_kei/items/a82769ac79340ea1acd8">herokuでLPを無料で公開する方法</a></li>
+                <li>・ログインしないと観覧できないページやパスワードを暗号化して保存する等の処理を実装</li>
+                <li>・queryPostを使用した検索機能の実装</li>
+                <li>・try(catch)を使用した例外処理の作成</li>
+                <li>・debugを使用しての実行結果ログ出力</li>
+                <li>・外部結合・AS使用の置き換え・表示順を指定した連絡掲示板の作成</li>
+                <li>・ページネーションを使用した表示ページの遷移</li>
+                <li>・セッションを使用したログイン保持機能の実装</li>
+                <li>・パスワード再発行メール送信・お気に入り機能を実装予定（修正中）</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-gem"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">使用した環境設定・機能</h4>
+              <ul>
+                <li>・MAMP（apache)</li>
+                <li>・MYSQL(phpmyadin)</li>
+                <li>・Gmail</li>
+                <li>・ajax</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <h3 class="content_title">Opanda</h3>
+      <div class="container">
+        <div class="left_space">
+          <p>制作したアプリへのリンク</p>
+          <a href="https://opanda.herokuapp.com/" target="_blank"><img src="img/opanda.png" alt="opanda"></a>
+          <p>制作したアプリの実行画面動画</p>
+          <video autoplay muted playsinline controls src="img/opanda.mov" class="capture_video"></video>
+        </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-chalkboard"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">アプリの概要</h4>
+              <ul>
+                <li>・セッションを使用せずに作った4択クイズアプリ</li>
+                <li>・ifの分岐処理とPHPのpost送信の理解を深めるために作ったアプリ</li>
+                <li>・デザインは父の会社のマスコットキャラを使用</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">ソースコード</h4>
+              <a href="https://github.com/keigooba/Opanda.git" class="github blue-link"
+                target="_blank">GitHub(Opanda)</a>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・input[hidden]を使用し、PHPへ値を渡して実行結果の画面表示</li>
+                <li>・shuffle()を使用し、配列の中身をランダム表示</li>
+                <li>・点数結果を保持したPHP処理</li>
+                <li>・分岐処理を使用した結果の判定の画面表示</li>
+                <li>・HEROKUにデプロイ</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-gem"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">使用した環境設定・機能</h4>
+              <ul>
+                <li>・MAMP（apache)</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center padding_top" id="section3">
+      <div class="front_text">Laravel<h2 class="back_text">Laravel</h2>
+      </div>
+      <h3 class="content_title">Attendance</h3>
+      <div class="container">
+        <div class="left_space">
+          <p>制作したアプリへのリンク</p>
+          <a href="http://attend.www.startdns.tokyo/" target="_blank"><img src="img/attendance.png" alt="Attendance"></a>
+          <p>制作したアプリの実行画面</p>
+          <video autoplay muted playsinline controls src="img/attendance.mov" class="capture_video"></video>
+        </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-chalkboard"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">アプリの概要</h4>
+              <ul>
+                <li>・勤怠管理システム</li>
+                <li>・ユーザー登録をすることで出勤・退勤の打刻が可能</li>
+                <li>・出退勤状況から日付検索・削除することが可能</li>
+                <li>・マイページからユーザー別検索・編集・削除が可能(管理者のみ)</li>
+                <li>・middlewareを使用し、ユーザー専用ページの実現</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">ソースコード</h4>
+              <a href="https://github.com/keigooba/main_attendance.git" class="github blue-link">GitHub(main_attendance)</a>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・親の会社が勤怠システムが欲しいと要望があり作成</li>
+                <li>・ユーザー名はラジオボタンで実装していて押した後出勤・退勤ボタンを押すと打刻され右横のログに出力される。ユーザー名を指定せず押すとエラーメッセージが出る分岐処理の実装</li>
+                <li>・ローカル環境構築にDockerを使用。npm使用の為、Node.jsに対応した専用のDockerfileの作成。</li>
+                <li> →docker<a href="https://qiita.com/hx_kei/items/a82769ac79340ea1acd8">herokuでLPを無料で公開する方法</a></li>
+                <li>・AWS(VPC,EC2,Route 53,RDS)でデプロイ。ロードバランサーの導入・オートスケーリングの自動復旧を作成しました。</li>
+                <li>・circleciを使用したCI/CDパイプラインの構築。</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <h3 class="content_title">マインスイーパー</h3>
+      <div class="container">
+        <div class="left_space">
+          <p>制作したゲームへのリンク</p>
+          <a href="https://freepc-yuki.com/dojo/minesweeper.html" target="_blank"><img src="image/minesweeper.png"
+              alt="マインスイーパー"></a>
+          <p>制作したゲームの実行画面動画</p>
+          <video autoplay muted playsinline controls src="image/minesweeper.mov" class="capture_video"></video>
+        </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-chalkboard"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">アプリの概要</h4>
+              <ul>
+                <li>・Javascriptで動作するマインスイーパー</li>
+                <li>・難易度に応じてランダムに爆弾を設置</li>
+                <li>・マス目を選択すると周囲に存在する爆弾の数を表示</li>
+                <li>・全ての爆弾に旗を立てればゲームクリア</li>
+                <li>・運ゲー要素を排除すべく、ランダムでマスを開くアイテムを追加。アイテムが配置されたマス目を開く事で入手可能</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">ソースコード</h4>
+              <a href="https://github.com/risottoupdate/minesweeper" class="github blue-link">GitHub(minesweeper)</a>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・爆弾をランダム配置、右クリックで旗を立てる、顔マーククリックで最初に戻る等のマインスイーパーの基本ルールは全て実装</li>
+                <li>・開いたマス目の周囲に爆弾が無ければ、爆弾が存在するマス目までを一気に開く機能も実装</li>
+                <li>・マスを開くと同時にタイマー起動。ゲーム終了と同時にタイマーストップ</li>
+                <li>・アイテムを使用すると、ランダムで非表示のマス目を開く機能を実装</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center back_dark padding_top" id="section4">
+      <div class="front_text">WordPress<h2 class="back_text">WordPress</h2>
+      </div>
+      <h3 class="content_title">個人ブログ作成</h3>
+      <div class="container">
+        <div class="left_space">
+          <p>カスタマイズした個人ブログ</p>
+          <a href="https://www.life-is-a-journey.work" target="_blank"><img src="image/life_if_a_journey.png"
+              alt="LIFE IS A JOURNEY"></a>
+        </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-chalkboard"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">アプリの概要</h4>
+              <ul>
+                <li>・テーマ用プラグインを導入したWordPressの個人ブログ</li>
+                <li>・既存テーマのカスタマイズ</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・OSの基本設定の記事投稿</li>
+                <li>・こちらもAWS上で動作しております</li>
+                <li>・AmazonS3（導入予定）</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center back_dark padding_top" id="section5">
+      <div class="front_text">Design<h2 class="back_text">Design</h2>
+      </div>
+      <h3 class="content_title">korona</h3>
+      <div class="container">
+        <div class="left_space">
+          <p>HPへのリンク</p>
+          <a href="https://korona8888.herokuapp.com/" data-lightbox="group"><img src="img/korona.png" width="300"
+              alt="korona"></a>
+        </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-chalkboard"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">HP概要</h4>
+              <ul>
+                <li>・COVID-19について簡単にまとめたサイト</li>
+                <li>・デザインパターンの学習及びHP制作のために作成</li>
+                <li>・transformを使用したjavascriptの実装</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・bootstrapを使用せず、自作のハンバーガーメニューを作成</li>
+                <li>・4つのパターンのフェードインアニメーションの実装</li>
+                <li>・1ページごとに1から異なるデザインの作成</li>
+                <li>・レスポンシブ対応</li>
+                <li>・サイト用に文章をライティング</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center padding_top" id="section7">
+      <div class="front_text">Others<h2 class="back_text">Others</h2>
+      </div>
+      <h3 class="content_title">もくもく会参加</h3>
+      <div class="container">
+        <div class="left_space">
+          <p>参加したもくもく会の集合写真</p>
+          <img src="img/mokumoku1.png" alt="もくもく会参加1">
+          <img src="img/mokumoku2.png" alt="もくもく会参加2">
+        </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・過去3回もくもく会に参加し、その内の1回</li>
+                <li>・作業もくもくのみ・セミナー形式どちらも経験</li>
+                <li>・自己紹介後・休憩時間、活発に意見の交換を行う</li>
+                <li>・所属しているオンラインサロンのオンラインもくもく会にも定期的に参加</li>
+                <li>・compassで大阪のもくもく会複数参加予定（現在3つ）</li>
+              </ul>
+              <p class="red-bold pt_30">→好奇心、探究心、行動力、コミュニケーション能力があります</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <h3 class="content_title">Qiitaへ技術記事投稿</h3>
+      <div class="container">
+        <div class="left_space">
+          <p>投稿したQiita記事の一部</p>
+          <a href="img/git1.png" data-lightbox="group"><img src="img/git1.png" width="300" alt="Qiitaへ技術記事投稿"></a>
+        </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・チーム開発で必要なgitの使い方を個人開発で再現</li>
+                <li>・2記事を作成(laravel作成時のアウトプットを複数枚作成予定）</li>
+                <li>・今後も勉強した内容を積極的にアウトプットしていく</li>
+              </ul>
+              <p class="red-bold pt_30">→新しい知識をインプットしアウトプットする事を常に意識しています</p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-plus-square"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">Qiita記事</h4>
+              <p>作成したQiita記事</p>
+              <a href="https://qiita.com/hx_kei/items/edc309ef1d3ab16bdab3" target="_blank"
+                class="blue-link">プログラミング初学者がGitで擬似開発する方法</a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <h3 class="content_title">YouTube動画投稿</h3>
+      <div class="container">
+        <div class="left_space">
+          <p>Laravelの個人開発(attendance)で使用した技術の解説動画</p>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/ixHykYDwky4"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <p class="red-bold pt_30">→使えそうと思ったら取り入れてみる思考力、最適な方法を探す検索力があります。</p>
+    </section>
+  </div>
+
+  <footer class="footer_bottom">
+    <p>Copyright - 大庭　慶吾, 2020 All Rights Reserved.</p>
+  </footer>
+
+  <div id="page_top"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+  <div class="message-toggle" id="js-message-1">サッカーが好きです。</div>
+  <div class="message-toggle" id="js-message-2">カレーが好きです。</div>
+  <div class="message-toggle" id="js-message-3">漫画が好きです。</div>
 </body>
-<script>
-// 要素のフェードインアニメーション
-$(window).scroll(function(){
-	$('.js-fade-trigger').each(function(){
-		var position = $(this).offset().top;
-		var scroll = $(window).scrollTop();
-		var windowHeight = $(window).scrollTop();
+<script src="portfolio.js"></script>
 
-		if(scroll > position - windowHeight + 200){
-			if($(this).hasClass('fade-element-left')) {
-				$(this).addClass('fade-common');
-			} else if($(this).hasClass('fade-element-up')){
-				$(this).addClass('fade-common');
-			} else if($(this).hasClass('fade-element-right')) {
-				$(this).addClass('fade-common');
-			} else if($(this).hasClass('fade-elem')) {
-				$(this).find('.fade-element-rotate').addClass('fade-common');
-				$(this).find('.fade-element-up').addClass('fade-common');
-			}
-		}
-	});
-});
-
-var pagetop = $('#page_top');
-// ボタン非表示
-pagetop.hide();
-// 100px スクロールしたらボタン表示
-$(window).scroll(function(){
-	if($(this).scrollTop() > 100){
-		pagetop.fadeIn();
-	} else {
-		pagetop. fadeOut();
-	}
-});
-pagetop.click(function() {
-	$('body,html').animate({scrollTop: 0 }, 500);
-	return false;
-});
-//一言自己紹介コメント
-$(window).scroll(function(){
-
-	if($(this).scrollTop() > 500 && $(this).scrollTop() < 650) {
-		$("#js-message-1").fadeIn();
-	} else {
-		$("#js-message-1").fadeOut();
-	}
-
-	if($(this).scrollTop() > 1100 && $(this).scrollTop() < 1250) {
-		$("#js-message-2").fadeIn();
-	} else {
-		$("#js-message-2").fadeOut();
-	}
-
-	if($(this).scrollTop() > 1800 && $(this).scrollTop() < 1950) {
-		$("#js-message-3").fadeIn();
-	} else {
-		$("#js-message-3").fadeOut();
-	}
-});
-
-</script>
 </html>

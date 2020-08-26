@@ -1,197 +1,236 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="utf-8">
-  <title>大庭慶吾 ポートフォリオサイト</title>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@hx_kei">
+  <meta name="twitter:creator" content="@hx_kei">
+  <meta name="twitter:title" content="大庭慶吾ポートフォリオサイト">
+  <meta name="twitter:description" content="職務経歴書、制作物一覧">
+  <meta name="twitter:image:src" content="http://introduction88.herokuapp.com/image/twitter-card.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <!-- フォントアイコン -->
-  <script src="https://kit.fontawesome.com/c4d6181f75.js" crossorigin="anonymous"></script>
-  <!-- <link href="style.css" rel="stylesheet"> -->
+  <title>大庭慶吾 ポートフォリオサイト</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="image/icomoon/style.css">
+  <link rel="shortcut icon" href="image/logo.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+  <script src="js/main_blog.js"></script>
 </head>
-
-<body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-md navbar-light fixed-top">
-    <div class="container-fluid">
-      Keigo Oba's Portfolio
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#top">top</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skill">skill</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!--- Image -->
-  <div class="image" id="top">
-    <div class="image-inner">
-      <img src="img/top-picture.jpg">
-      <div class="image-caption">
-        <h2 class="text-danger">ただ今、転職活動中！</h2>
-        <p class="text-secondary">希望職種：バックエンドエンジニア</p>
-        <p class="text-secondary">学習中言語：PHP,Laravel</p>
-        <p class="text-secondary">希望勤務地：大阪、東京</p>
-        <p class="text-secondary">希望年収：250万円/年 以上</p>
-        <h2 class="text-secondary">興味持って頂きましたらご連絡ください！</h2>
-      </div>
+<body class="preload">
+  <div class="top_wrapper hero">
+    <div class="top_message">
+      <div class="red-bold">ただ今、転職活動中！</div>
+      <p>
+        希望職種：バックエンドエンジニア<br>
+        学習中言語：PHP,Laravel<br>
+        希望勤務地：大阪、東京<br>
+        希望年収：250万円/年 以上
+      </p>
+      <div class="lead">興味を持って頂きましたらご連絡ください！</div>
     </div>
   </div>
 
-  <!--- About -->
-  <div class="container-fluid">
-    <div class="row text-center" id="about">
-      <div class="col-12 fade-element-left js-fade-trigger">
-        <p class="subtitle">about</p>
-        <h1>自己紹介</h1>
-      </div>
-      <div class="col-md-6 about-picture fade-element-left js-fade-trigger font-medium">
-        <img src="img/mypicture.jpg" class="rounded-circle mb-2">
-        <label style="display:block"><a href="https://twitter.com/hx_kei"><i
-              class="fab fa-twitter"></i>Twitter</a></label>
-        <label style="display:block"><a href="https://github.com/keigooba"><i
-              class="fab fa-github"></i>GitHub</a></label>
-        <label style="display:block"><a href="https://qiita.com/hx_kei"><i class="fab fa-quora"></i>Qiita</a></label>
-      </div>
-      <div class="col-md-6 about-text fade-element-right js-fade-trigger">
-        <h2><i class="fas fa-user mr-4"></i>パーソナル情報</h2>
-        <div class="m-2">
-          <p>大庭 慶吾（おおば けいご）</p>
-          <p>1995年08月10日生まれ/25歳</p>
+  <div class="background_color">
+    <header class="header_nav flex space">
+      <h1 class="top_logo">
+        <a href="#">大庭慶吾 Portfolio Site</a>
+      </h1>
+
+      <nav class="menu open flex">
+        <ul class="flex hover_blue">
+          <li><a href="#section1">about me</a></li>
+          <li><a href="#section2">PHP</a></li>
+          <li><a href="#section3">Laravel</a></li>
+          <li><a href="#section4">WordPress</a></li>
+          <li><a href="#section5">Design</a></li>
+          <li><a href="#section6">Other</a></li>
+        </ul>
+      </nav>
+
+      <!--ハンバーガーメニューの中-->
+      <nav class="menu" id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+          <div class="side_wrapper">
+            <div class="side_top">
+              <p class="profile_top">カテゴリ</p>
+            </div>
+            <ul class="hover_blue">
+              <li><a href="#section1">about me</a></li>
+              <li><a href="#section2">PHP</a></li>
+              <li><a href="#section3">Laravel</a></li>
+              <li><a href="#section4">WordPress</a></li>
+              <li><a href="#section5">Design</a></li>
+              <li><a href="#section6">Other</a></li>
+            </ul>
+          </div>
         </div>
-        <h2><i class="fas fa-walking mr-4"></i>経歴</h2>
-        <div class="m-2">
-          <ul class="m-2">
-            <li>2016年8月：龍谷大学 環境ソリューション工学科 中退</li>
-            <li>2016年9月：大庭工務店 入社（アルバイト）</li>
-            <li>2017年3月：修成建設専門学校 建築学科(夜間） 入学</li>
-          </ul>
-          <div class="m-2">
-            <p>
-              「モノづくり」ができる建築に興味を持ち、大学を中退して父が経営する会社に入社しました。<br>入社２年目に現場監督として、１年で4件の新築現場を担当し、責任を持って業務に取り組んできました。<br>当時の現場の課題は納期を守れない事。<br>それに対して毎日のスケジュール確認・現場に入る職人への4、5日前の事前確認連絡・雨天中止や大工工事延長の予備日の設定など。<br>これらを徹底することで検査確認もスムーズに行え、全ての現場で納期を守り、<span
-                class="text-danger font-weight-bold">誰よりも余裕を持って完工することができました。</span><br>毎日円滑に進めるための方法を考え、自然にその行動を取るようになりました。<br><span
-                class="text-danger font-weight-bold">常に頭を使い改善案を考える癖</span>がこの時身につきました。</p>
+      </nav>
+    </header>
+
+    <section class="text-center pt_70" id="section1">
+      <div class="front_text">about me<h2 class="back_text">about me</h2></div>
+      <div class="container">
+
+        <div class="left_space">
+          <img src="image/keigo-profile2.jpg" class="profile_image" alt="大庭 慶吾（おおば けいご）">
+          <div class="sns">
+            <ul class="text_center">
+              <li><a href="https://twitter.com/hx_kei" class="twitter" target="_blank">Twitter</a></li>
+              <li><a href="https://github.com/keigooba" class="github" target="_blank">GitHub</a></li>
+              <li><a href="https://qiita.com/hx_kei" class="Qiita" target="_blank">Qiita</a></li>
+              <li><a href="mailto:keigo2356@gmail.com" class="email" target="_blank">E-mail</a></li>
+            </ul>
           </div>
-          <ul class="m-2">
-            <li>2019年1月：大庭工務店 退職</li>
-            <li>2019年3月：修成建設専門学校 建築学科(夜間）卒業・菱和建設(株) 就職</li>
-            <li>2019年6月：菱和建設(株）退職</li>
-          </ul>
-          <div class="m-2">
-            <p>仕事しながら夜間で通った専門学校を卒業後、総合建設会社に就職。<br>そこで改めて現場監督の将来性に不安を感じ、真剣に考え、退職を決意しました。<br>当時は未熟だったと反省しています。</p>
-          </div>
-          <ul class="m-2">
-            <li>2019年7月：大庭工務店 退職</li>
-            <li>2019年3月：修成建設専門学校 建築学科(夜間）卒業・菱和建設(株) 就職</li>
-            <li>2019年6月：菱和建設(株）退職</li>
-          </ul>
-          <div class="m-2">
-            <p>夜間で通った専門学校を卒業後、総合建設会社に就職。<br>そこで改めて現場監督の将来性に不安を感じ、真剣に考え、退職を決意しました。<br><span
-                class="text-danger font-weight-bold">当時は未熟だったと反省しています。</span></p>
-          </div>
-          <ul class="m-2">
-            <li>2019年7月：株式会社ウィルエージェンシー 派遣 短期</li>
-            <li>2019年9月：株式会社ヒガシ21 倉庫内作業 派遣 短期（掛け持ち)</li>
-            <li>2019年10月：うおまん中之島店 アルバイト(掛け持ち)</li>
-            <li>2019年11月：阪急トラベルサポート（株） 派遣 短期(掛け持ち)</li>
-          </ul>
-          <div class="m-2">
-            <p>
-              11月~12月にプログラミングスクールに通う資金のために、掛け持ちで週7・9~22時で働きました。業務は倉庫内作業・データ入力・調理補助です。<br>基本的にはどれも単純作業で体力的に辛い時もありましたが、無事目標金額を達成できました。<br><span
-                class="text-danger font-weight-bold">目標定められた時、その仕事へのやりがいや楽しさを見出すことができます。</span></p>
-          </div>
-          <ul class="m-2">
-            <li>2020年4月：株式会社SHIROLOG アルバイト 短期</li>
-            <li>2020年6月：阪急トラベルサポート(株） 派遣 短期 7月退職</li>
-          </ul>
-          <div class="m-2">
-            <p>
-              11月~12月にプログラミングスクールに通う資金のために、掛け持ちで週7・9~22時で働きました。業務は倉庫内作業・データ入力・調理補助です。<br>基本的にはどれも単純作業で体力的に辛い時もありましたが、無事目標金額を達成できました。<br><span
-                class="text-danger font-weight-bold">目標定められた時、その仕事へのやりがいや楽しさを見出すことができます。</span></p>
-          </div>
-          <ul class="m-2">
-            <li>2020年4月：株式会社SHIROLOG アルバイト 短期</li>
-            <li>2020年6月：阪急トラベルサポート(株） 派遣 短期 7月退職</li>
-            <li>現在転職活動中</li>
-          </ul>
         </div>
-        <h2><i class="far fa-hand-point-up"></i>2019年に学習したプログラミングスキル</h2>
-        <p class="text-danger">12月30日から現在まで継続的に学習を続けています</p>
-        <p>12月30日~1月16日(17日)：Ruby,Ruby on Rails</p>
-        <p>1月17日~2月21日(35日)：html,css,bootstrap,git</p>
-        <p>2月22日~3月22日(30日)：html,css,javascript</p>
-        <p>3月23日~5月7日(45日)：PHP,SQL</p>
-        <p>5月8日~6月18日(40日)：成果物アウトプット</p>
-        <p>6月19日~現在(66日)：Docker,aws,circleci,laravel</p>
-        <p>成果物については下記参照ください</p>
+
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">パーソナル情報</h3>
+              <p>
+                大庭 慶吾（おおば けいご）<br>
+                1995年08月10日生まれ / 25歳
+              </p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-walking"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">経歴</h3>
+              <ul>
+                <li>・2016年8月 ： 龍谷大学 環境ソリューション工学科 中退</li>
+                <li>・2017年3月 ： 修成建設専門学校 建築学科(夜間） 入学</li>
+                <li>
+                  ・2016年9月 ： ㈱大庭工務店 入社（アルバイト)
+                  <div class="indent">
+                    「モノづくり」ができる建築に興味を持ち、大学を中退して父が経営する会社に入社しました。<br>
+                    入社２年目に現場監督として、１年で4件の新築現場を担当し、責任を持って業務に取り組んできました。<br>
+                    当時の現場の課題は納期を守りきれない事。<br>
+                    それに対して日々のスケジュール確認・職人への作業事前確認連絡・雨天中止や大工工事延長の予備日の設定を行いました。<br>
+                    これらを徹底することで検査関係をスムーズに行え、全ての現場で納期を守り、<span
+                    class="red-bold">監督の誰よりも余裕を持って完工することができました。</span><br>
+                    毎日円滑に進めるための方法を考え、自然にその行動を取るようになりました。<br>
+                    <span
+                    class="red-bold">常に頭を使い改善案を考える癖</span>がこの時身につきました。
+                  </div>
+                </li>
+                <li>・2019年1月 ： 大庭工務店 退職</li>
+                <li>・2019年3月 ： 修成建設専門学校 建築学科(夜間）卒業菱和建設㈱ 就職</li>
+                <li>・2019年3月 ： 菱和建設㈱ 就職</li>
+                <li>・2019年6月 ： 菱和建設㈱ 退職</li>
+                <li>
+                  ・2014年10月 ： 食品会社（製造メーカー) 就職
+                  <div class="indent">
+                    仕事と並行して通った専門学校を卒業後、総合建設会社に就職。<br>
+                    そこで改めて現場監督の将来性に不安を感じ、真剣に考え、退職を決意しました。<br>
+                    <span class="red-bold">当時は軽率だったと反省しています。</span>
+                  </div>
+                </li>
+                <li>・2019年7月 ： ㈱ウィルエージェンシー 派遣 短期</li>
+                <li>
+                  ・2019年9月 ： ㈱ヒガシ21 倉庫内作業 派遣 短期
+                  ・2019年10月 ： うおまん中之島店 アルバイト(夜)
+                  ・2019年11月 ： 阪急トラベルサポート㈱ 派遣 短期
+                  <div class="indent">
+                    11月~12月にプログラミングスクールに通う資金のために、掛け持ちで週7・9~22時で働きました。業務は倉庫内作業・調理補助・データ入力です。<br>
+                    基本的にはどれも単純作業で体力的に辛い時もありましたが、無事目標金額を達成できました。<br>
+                    <span class="red-bold">目標定められた時、やりがいや楽しさを見出すことができます。</span>
+                  </div>
+                </li>
+                <li>・2020年4月 ： ㈱SHIROLOG アルバイト 短期</li>
+                <li>・2020年6月 ： 阪急トラベルサポート㈱ 派遣 短期 7月退職</li>
+                <li>・現在現在転職活動中</li>
+              </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-hand-point-up"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">2019年に学習したプログラミングスキル</h3>
+              <p class="red-bold">12月30日から現在まで継続的に学習を続けています</p>
+              <ul>
+                <li>12月30日〜1月16日( 17 日) ： Ruby,Ruby on Rails</li>
+                <li>1月17日〜2月21日( 35 日) ： HTML,CSS,BOOTSTRAP,Git</li>
+                <li>2月22日〜3月22日( 30 日) ： HTML,CSS,JavaScript</li>
+                <li>3月23日〜6月18日( 85 日) ： PHP,SQL</li>
+                <li>6月19日〜現在（<span id="Laravel_stady"></span>日） ： Laravel,Docker,AWS,CircleCI</li>
+              </ul>
+              <p>※成果物については下記参照ください</p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="fas fa-pen-nib"></i>
+            </div>
+            <div class="info">
+              <h3 class="top_info">どの様な業務をしたいか</h3>
+              <p>
+                <span class="red-bold">より多くの人に使ってもらえる面白いアプリ開発</span>に携わりたいです。<br>
+                その為に必要な言語やスキルを常に取り入れていける環境で働きたいです。
+              </p>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-thumbs-up"></i>
+            </div>
+            <div id="future" class="info">
+              <h3 class="top_info">どの様なエンジニアになりたいか</h3>
+              <p>
+                建築専門学校を卒業していてもIT業界を志した理由は、<br>
+                <span class="red-bold">「簡略化による価値を生み出し、より多くの人に喜んで貰いたい」</span>と感じたからです。
+              </p>
+              <section>
+                <h4>1.物事の簡略化</h4>
+                <p>
+                  便利なシステムは世の中に多くありますが、複雑化して一般ユーザーでは使いづらいシステムがあると考えています。<br>
+                  老若男女誰にでも扱えるよう常に改善策を考え、ユーザーに寄り添った提案・実装をすることで多くの人に喜んで貰いたいです。<br>
+                  それが私の喜びになり、自分自身の成長に繋がると考えています。
+                </p>
+              <section>
+                <h4>2.価値提供</h4>
+                <p>
+                  価値とは多くの人に喜んで貰った人の数だと考えています。<br>
+                  サービス開発時には、常に人に使って貰い、便利だと喜んで貰う事を意識して作成しており、適宜改善・修正を行っています。<br>
+                  また、ITにはそれが実現可能だと思い、ITへの道を志しました。
+                </p>
+              </section>
+              <section>
+                <h4>3.影響力を持つ</h4>
+                <p>
+                  私が得た情報やスキルは、どんどん他者へ提供していこうと考えております。<br>
+                  SNSを使って情報発信したり、技術記事を発信したりと、積極的に実行していきます。それにより1人でも多くの人に影響を与え、私の志す「より多くの人に喜んで貰うこと」に必要な条件だと考えています。
+                </p>
+              </section>
+            </div>
+          </section>
+        </div>
       </div>
-      <h2><i class="fas fa-pen-nib"></i>どのような業務をしたいか</h2>
-      <div class="m-2">
-        <p><span
-            class="text-danger font-weight-bold">より多くの人に使ってもらえる面白いアプリ開発</span>に携わりたいです。<br>その為に必要な言語やスキルを常に取り入れていける環境で働きたいです。
-        </p>
-      </div>
-      <h2><i class=""></i>どの様なエンジニアになりたいか</h2>
-      <div class="m-2">
-        <p>建築専門学校を卒業していてもIT業界を志した理由は、<span
-            class="text-danger font-weight-bold">「簡略化による価値を生み出し、より多くの人に喜んで貰いたい」</span>と感じたからです。</p>
-      </div>
-      <section>
-        <h4>1.物事の簡略化</h4>
-        <p>便利なシステムは世の中に多くあるのですが、複雑化して一般ユーザーでは使いづらいシステムがあると考えています。<br>老若男女誰にでも扱えるよう常に改善策を考え、ユーザーに寄り添った提案・実装をしていきたいです。
-        </p>
-      </section>
-      <section>
-        <h4>2.価値提供</h4>
-        <p>
-          価値とは人に喜んで貰って、はじめて意味を持つものだと考えています。<br>
-          サービス開発時には、常に人に使って貰い、多くの人に便利だと喜んで貰う事を意識して作成しており、適宜改善・修正を行っています。<br>
-          また、ITにはそれが実現可能だと思い、ITへの道を志しました。
-        </p>
-      </section>
-      <section>
-        <h4>3.影響力を持つ</h4>
-        <p>
-          私が得た情報やスキルは、どんどん他者へ提供していこうと考えております。<br>
-          SNSを使って情報発信したり、技術記事を発信したりと、積極的に実行していきます。それにより1人でも多くの人に影響を与え、私の志す「より多くの人に喜んで貰うこと」に必要な条件だと考えています。
-        </p>
-      </section>
-    </div>
+    </section>
 
     <section class="text-center back_dark padding_top" id="section2">
-      <div class="front_text">PHP<h2 class="back_text">PHP</h2>
-      </div>
+      <div class="front_text">PHP<h2 class="back_text">PHP</h2></div>
       <h3 class="content_title">yourself</h3>
       <div class="container">
+
         <div class="left_space">
           <p>制作したアプリへのリンク</p>
-          <a href="https://yourself8989.herokuapp.com/" target="_blank"><img src="img/yourself.png" alt="yourself"></a>
+          <a href="https://yourself8989.herokuapp.com/" target="_blank"><img src="image/yourself.png" alt="yourself"></a>
           <p>制作したアプリの実行画面動画</p>
-          <video autoplay muted playsinline controls src="img/yourself.mov" class="capture_video"></video>
+          <video autoplay muted playsinline controls src="image/yourself.mov" class="capture_video"></video>
         </div>
         <div class="right_space">
           <section class="flex">
@@ -228,9 +267,7 @@
                 <li>・HEROKUにアプリをデプロイしています。HEROKUへのデプロイ方法（LPのみ）をQiitaへ投稿</li>
                 <li> →Qiita<a href="https://qiita.com/hx_kei/items/a82769ac79340ea1acd8">herokuでLPを無料で公開する方法</a></li>
                 <li>・ログインしないと観覧できないページやパスワードを暗号化して保存する等の処理を実装</li>
-                <li>・queryPostを使用した検索機能の実装</li>
                 <li>・try(catch)を使用した例外処理の作成</li>
-                <li>・debugを使用しての実行結果ログ出力</li>
                 <li>・外部結合・AS使用の置き換え・表示順を指定した連絡掲示板の作成</li>
                 <li>・ページネーションを使用した表示ページの遷移</li>
                 <li>・セッションを使用したログイン保持機能の実装</li>
@@ -243,12 +280,10 @@
               <i class="far fa-gem"></i>
             </div>
             <div class="info">
-              <h4 class="top_info">使用した環境設定・機能</h4>
+              <h4 class="top_info">ローカル環境設定</h4>
               <ul>
                 <li>・MAMP（apache)</li>
                 <li>・MYSQL(phpmyadin)</li>
-                <li>・Gmail</li>
-                <li>・ajax</li>
               </ul>
             </div>
           </section>
@@ -259,9 +294,9 @@
       <div class="container">
         <div class="left_space">
           <p>制作したアプリへのリンク</p>
-          <a href="https://opanda.herokuapp.com/" target="_blank"><img src="img/opanda.png" alt="opanda"></a>
+          <a href="https://opanda.herokuapp.com/" target="_blank"><img src="image/opanda.png" alt="opanda"></a>
           <p>制作したアプリの実行画面動画</p>
-          <video autoplay muted playsinline controls src="img/opanda.mov" class="capture_video"></video>
+          <video autoplay muted playsinline controls src="image/opanda.mov" class="capture_video"></video>
         </div>
         <div class="right_space">
           <section class="flex">
@@ -307,7 +342,7 @@
               <i class="far fa-gem"></i>
             </div>
             <div class="info">
-              <h4 class="top_info">使用した環境設定・機能</h4>
+              <h4 class="top_info">ローカル環境設定</h4>
               <ul>
                 <li>・MAMP（apache)</li>
               </ul>
@@ -324,9 +359,9 @@
       <div class="container">
         <div class="left_space">
           <p>制作したアプリへのリンク</p>
-          <a href="http://attend.www.startdns.tokyo/" target="_blank"><img src="img/attendance.png" alt="Attendance"></a>
+          <a href="http://attend.www.startdns.tokyo/" target="_blank"><img src="image/attendance.png" alt="Attendance"></a>
           <p>制作したアプリの実行画面</p>
-          <video autoplay muted playsinline controls src="img/attendance.mov" class="capture_video"></video>
+          <video autoplay muted playsinline controls src="image/attendance.mov" class="capture_video"></video>
         </div>
         <div class="right_space">
           <section class="flex">
@@ -361,25 +396,25 @@
               <h4 class="top_info">こだわりポイント</h4>
               <ul>
                 <li>・親の会社が勤怠システムが欲しいと要望があり作成</li>
-                <li>・ユーザー名はラジオボタンで実装していて押した後出勤・退勤ボタンを押すと打刻され右横のログに出力される。ユーザー名を指定せず押すとエラーメッセージが出る分岐処理の実装</li>
-                <li>・ローカル環境構築にDockerを使用。npm使用の為、Node.jsに対応した専用のDockerfileの作成。</li>
-                <li> →docker<a href="https://qiita.com/hx_kei/items/a82769ac79340ea1acd8">herokuでLPを無料で公開する方法</a></li>
+                <li>・ユーザー名はラジオボタンで実装していて押した後出勤・退勤ボタンを押すと打刻される。右横のログに実行結果出力。ユーザー名を指定せず押すとエラーメッセージが出る分岐処理の実装。</li>
+                <li>・ローカル環境構築にDockerを使用。Node.jsに対応したDockerfileの作成。</li>
+                <li> →ソースコード<a href="https://github.com/keigooba/main_attendance_docker.git">>GitHub(main_attendance_docker)</a></li>
                 <li>・AWS(VPC,EC2,Route 53,RDS)でデプロイ。ロードバランサーの導入・オートスケーリングの自動復旧を作成しました。</li>
                 <li>・circleciを使用したCI/CDパイプラインの構築。</li>
+                <li>・git fetch,mergeを頻繁に使用しチーム開発を再現。</li>
+                <li>・「Laravel Excel」パッケージ導入し、５万円で販売(作成予定)</li>
+                <li>・一から機能の洗い出し・テーブル設計・WFの作成等を行い、<span class="red-bold">設計書を作成。（詳細は下記)</span></li>
               </ul>
             </div>
           </section>
         </div>
       </div>
-
-      <h3 class="content_title">マインスイーパー</h3>
       <div class="container">
         <div class="left_space">
-          <p>制作したゲームへのリンク</p>
-          <a href="https://freepc-yuki.com/dojo/minesweeper.html" target="_blank"><img src="image/minesweeper.png"
-              alt="マインスイーパー"></a>
-          <p>制作したゲームの実行画面動画</p>
-          <video autoplay muted playsinline controls src="image/minesweeper.mov" class="capture_video"></video>
+          <p>設計書の一部抜粋</p>
+          <a href="image/出勤システムの構造.png" data-lightbox="group"><img src="image/出勤システムの構造.png" width="300" alt="出勤システムの構造"></a>
+          <p>WFの一部抜粋</p>
+          <a href="image/attendance_WF.png" data-lightbox="group"><img src="image/attendance_WF.png" width="300" alt="attendance_WF"></a>
         </div>
         <div class="right_space">
           <section class="flex">
@@ -387,23 +422,9 @@
               <i class="fas fa-chalkboard"></i>
             </div>
             <div class="info">
-              <h4 class="top_info">アプリの概要</h4>
-              <ul>
-                <li>・Javascriptで動作するマインスイーパー</li>
-                <li>・難易度に応じてランダムに爆弾を設置</li>
-                <li>・マス目を選択すると周囲に存在する爆弾の数を表示</li>
-                <li>・全ての爆弾に旗を立てればゲームクリア</li>
-                <li>・運ゲー要素を排除すべく、ランダムでマスを開くアイテムを追加。アイテムが配置されたマス目を開く事で入手可能</li>
-              </ul>
-            </div>
-          </section>
-          <section class="flex">
-            <div class="icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <div class="info">
-              <h4 class="top_info">ソースコード</h4>
-              <a href="https://github.com/risottoupdate/minesweeper" class="github blue-link">GitHub(minesweeper)</a>
+              <h4 class="top_info">設計書の概要</h4>
+              <a href="https://drive.google.com/drive/folders/1NhNlTNZKJaLcg8vTRbNzrmAqMJdcl7gx?usp=sharing" class="blue-link"
+                target="_blank">設計書（Googleドライブ）</a>
             </div>
           </section>
           <section class="flex">
@@ -413,26 +434,38 @@
             <div class="info">
               <h4 class="top_info">こだわりポイント</h4>
               <ul>
-                <li>・爆弾をランダム配置、右クリックで旗を立てる、顔マーククリックで最初に戻る等のマインスイーパーの基本ルールは全て実装</li>
-                <li>・開いたマス目の周囲に爆弾が無ければ、爆弾が存在するマス目までを一気に開く機能も実装</li>
-                <li>・マスを開くと同時にタイマー起動。ゲーム終了と同時にタイマーストップ</li>
-                <li>・アイテムを使用すると、ランダムで非表示のマス目を開く機能を実装</li>
+                <li>・要件定義で機能の洗い出しを表に簡単にまとめる</li>
+                <li>・勤怠システムのMVCの流れをイメージ図で作成</li>
+                <li>・テーブル設計の作成(仮）</li>
+                <li>・WFでデザイン・レイアウトの作成</li>
+                <li>・CSS設計でCSSルールの作成</li>
+                <li>・タスク管理表で各ページの作成時間の見積もり</li>
               </ul>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-plus-square"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">補足資料</h4>
+              <p>Adobe XDで作成したWF</p>
+              <a href="https://xd.adobe.com/view/3c6aa564-f5ea-4fad-9957-371997eaf0ae-6939/" target="_blank" class="blue-link">Attendance（WF）</a>
             </div>
           </section>
         </div>
       </div>
     </section>
 
-    <section class="text-center back_dark padding_top" id="section4">
+    <section class="text-center back_dark padding_top" id="section4" style="height: 670px;">
       <div class="front_text">WordPress<h2 class="back_text">WordPress</h2>
       </div>
-      <h3 class="content_title">個人ブログ作成</h3>
+      <h3 class="content_title">keiのつぶやきブログ</h3>
       <div class="container">
         <div class="left_space">
           <p>カスタマイズした個人ブログ</p>
-          <a href="https://www.life-is-a-journey.work" target="_blank"><img src="image/life_if_a_journey.png"
-              alt="LIFE IS A JOURNEY"></a>
+          <a href="image/wordpress.png" target="_blank"><img src="image/wordpress.png"
+              alt="keiのつぶやきブログ"></a>
         </div>
         <div class="right_space">
           <section class="flex">
@@ -449,11 +482,6 @@
           </section>
           <section class="flex">
             <div class="icon">
-              <i class="fas fa-code"></i>
-            </div>
-          </section>
-          <section class="flex">
-            <div class="icon">
               <i class="far fa-lightbulb"></i>
             </div>
             <div class="info">
@@ -461,7 +489,7 @@
               <ul>
                 <li>・OSの基本設定の記事投稿</li>
                 <li>・こちらもAWS上で動作しております</li>
-                <li>・AmazonS3（導入予定）</li>
+                <li>・AmazonS3導入（予定）</li>
               </ul>
             </div>
           </section>
@@ -469,14 +497,14 @@
       </div>
     </section>
 
-    <section class="text-center back_dark padding_top" id="section5">
+    <section class="text-center padding_top" id="section5" style="height: 670px;">
       <div class="front_text">Design<h2 class="back_text">Design</h2>
       </div>
       <h3 class="content_title">korona</h3>
       <div class="container">
         <div class="left_space">
           <p>HPへのリンク</p>
-          <a href="https://korona8888.herokuapp.com/" data-lightbox="group"><img src="img/korona.png" width="300"
+          <a href="https://korona8888.herokuapp.com/" data-lightbox="group"><img src="image/korona.png" width="300"
               alt="korona"></a>
         </div>
         <div class="right_space">
@@ -503,6 +531,7 @@
                 <li>・bootstrapを使用せず、自作のハンバーガーメニューを作成</li>
                 <li>・4つのパターンのフェードインアニメーションの実装</li>
                 <li>・1ページごとに1から異なるデザインの作成</li>
+                <li>・HEROKUにデプロイ</li>
                 <li>・レスポンシブ対応</li>
                 <li>・サイト用に文章をライティング</li>
               </ul>
@@ -512,15 +541,14 @@
       </div>
     </section>
 
-    <section class="text-center padding_top" id="section7">
+    <section class="text-center back_dark padding_top" id="section6">
       <div class="front_text">Others<h2 class="back_text">Others</h2>
       </div>
       <h3 class="content_title">もくもく会参加</h3>
       <div class="container">
         <div class="left_space">
-          <p>参加したもくもく会の集合写真</p>
-          <img src="img/mokumoku1.png" alt="もくもく会参加1">
-          <img src="img/mokumoku2.png" alt="もくもく会参加2">
+          <p>参加したもくもく会の写真</p>
+          <img src="image/mokumoku1.png" alt="もくもく会参加">
         </div>
         <div class="right_space">
           <section class="flex">
@@ -546,7 +574,7 @@
       <div class="container">
         <div class="left_space">
           <p>投稿したQiita記事の一部</p>
-          <a href="img/git1.png" data-lightbox="group"><img src="img/git1.png" width="300" alt="Qiitaへ技術記事投稿"></a>
+          <a href="image/git1.png" data-lightbox="group"><img src="image/git1.png" width="300" alt="Qiitaへ技術記事投稿"></a>
         </div>
         <div class="right_space">
           <section class="flex">
@@ -586,8 +614,23 @@
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
+        <div class="right_space">
+          <section class="flex">
+            <div class="icon">
+              <i class="far fa-lightbulb"></i>
+            </div>
+            <div class="info">
+              <h4 class="top_info">こだわりポイント</h4>
+              <ul>
+                <li>・web,controller,viewに関して作成コードを元に解説</li>
+                <li>・アクセサ・Auth::loginUsingId()について解説</li>
+                <li>・エラーハンドリング・ポリシークラスについて解説</li>
+              </ul>
+              <p class="red-bold pt_30">→使えそうと思ったら取り入れてみる思考力、最適な方法を探す検索力があります。</p>
+            </div>
+          </section>
+        </div>
       </div>
-      <p class="red-bold pt_30">→使えそうと思ったら取り入れてみる思考力、最適な方法を探す検索力があります。</p>
     </section>
   </div>
 
@@ -595,11 +638,5 @@
     <p>Copyright - 大庭　慶吾, 2020 All Rights Reserved.</p>
   </footer>
 
-  <div id="page_top"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
-  <div class="message-toggle" id="js-message-1">サッカーが好きです。</div>
-  <div class="message-toggle" id="js-message-2">カレーが好きです。</div>
-  <div class="message-toggle" id="js-message-3">漫画が好きです。</div>
 </body>
-<script src="portfolio.js"></script>
-
 </html>
